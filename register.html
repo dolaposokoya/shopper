@@ -51,7 +51,8 @@
                     <img src="./assets/svg/eye.svg" class="eye-svg" />
                 </div>
                 <div class="terms-conditions">
-                    <img src="./assets/svg/Check-Empty.svg" />
+                    <div id="checkbox" onclick="toggleClass()">
+                    </div>
                     <p class="terms-policy-text">I accepted <span>Terms & Privacy Policy</span></p>
                 </div>
                 <div class="button-view">
@@ -60,6 +61,14 @@
             </div>
         </div>
     </div>
+
+    <script>
+        function toggleClass() {
+            <!-- const element = document.getElementById("terms"); -->
+            const element = document.getElementById("checkbox");
+            element.classList.toggle("clicked-style");
+        }
+    </script>
 </body>
 
 </html>

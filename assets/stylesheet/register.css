@@ -63,7 +63,8 @@ body {
     background-color: #fff;
     margin-right: 1rem;
 }
-.company-container img{
+
+.company-container img {
     width: 2rem;
     height: 2rem;
 }
@@ -115,7 +116,7 @@ body {
     position: relative;
     display: inline-block;
     padding: 0rem .5rem;
-  }
+}
 
 .account-title {
     color: var(--Second-Black, #01040D);
@@ -136,14 +137,17 @@ body {
     display: block;
     position: absolute;
     width: 100%;
-    height: .5rem; /* Height of the rectangle */
+    height: .5rem;
+    /* Height of the rectangle */
     background: var(--Primary-Pink, #F5B3A5);
-    top: 60%; /* Center vertically */
-    left: 0; /* Align to the left of the container */
+    top: 60%;
+    /* Center vertically */
+    left: 0;
+    /* Align to the left of the container */
     transform: translateY(-50%);
     opacity: .8;
     /* z-index: -99; */
-  }
+}
 
 .form-view {
     display: flex;
@@ -237,9 +241,22 @@ select::after {
 }
 
 .terms-conditions img {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: .5rem;
+}
+
+#checkbox {
     width: 1rem;
     height: 1rem;
     margin-right: .5rem;
+    border: .08rem solid #8991A4;
+    border-radius: .2rem;
+    cursor: pointer;
+}
+
+.clicked-style {
+    background-color: var(--Primary-Orange);
 }
 
 .button-view {
