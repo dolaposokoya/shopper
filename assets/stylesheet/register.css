@@ -253,10 +253,11 @@ select::after {
     border: .08rem solid #8991A4;
     border-radius: .2rem;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .clicked-style {
-    background-color: var(--Primary-Orange);
+    background-color: var(--Primary-Dark);
 }
 
 .button-view {
