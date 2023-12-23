@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Select Dropdown</title>
+  <style>
+    /* Reset default styles for better consistency across browsers */
+    select {
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      outline: none;
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 4px;
+      width: 200px;
+      cursor: pointer;
+    }
+
+    /* Style the custom arrow icon */
+    select::after {
+      content: '\25BC'; /* Unicode character for a down arrow */
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
+      pointer-events: none;
+      color: #555;
+    }
+
+    /* Style the options within the dropdown */
+    select option {
+      background-color: red;
+      color: #555;
+    }
+
+    /* Style the dropdown when opened */
+    select:active,
+    select:focus {
+      border-color: #007BFF;
+    }
+  </style>
+</head>
+<body>
+
+  <label for="custom-select">Choose an option:</label>
+  <select id="custom-select">
+    <option value="option1">Option 1</option>
+    <option value="option2">Option 2</option>
+    <option value="option3">Option 3</option>
+  </select>
+
+</body>
+</html>

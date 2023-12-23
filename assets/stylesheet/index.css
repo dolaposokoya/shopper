@@ -1,11 +1,12 @@
 body {
     background: var(--Primary-Dark, #DF4300);
     width: 100vw;
-    height: 100vh;
+    /* height: 100vh; */
+    padding: 1rem 0rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    /* overflow: hidden; */
     flex-direction: column;
 }
 
@@ -38,8 +39,8 @@ body {
 
 .form-container {
     background-color: #fff;
-    width: 60%;
-    height: 60%;
+    width: 57%;
+    /* height: 60%; */
     flex-shrink: 0;
     border-radius: 16px;
     box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.10);
@@ -96,7 +97,6 @@ body {
     margin: .4rem 0rem;
     border-radius: 1rem;
     border: 1px solid var(--Second-Grey, #8991A4);
-    opacity: 0.3;
     padding: .5rem .5rem;
     /* width: 374px; */
     width: 18rem;
@@ -149,6 +149,35 @@ body {
     font-style: normal;
     font-weight: 600;
     line-height: 1rem;
+}
+
+.button-view {
+    width: 19rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.button-view button {
+    width: 100%;
+    padding: 1rem 0px;
+    justify-content: center;
+    align-items: center;
+    background: var(--Primary-Dark, #DF4300);
+    border: none;
+    border-radius: 1rem;
+    /* color: white; */
+    font-family: var(--Poppins);
+    cursor: pointer;
+    color: var(--Second-White, #FFF);
+    text-align: center;
+    font-feature-settings: 'clig'off, 'liga'off;
+    font-size: .95rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5rem;
 }
 
 .signin-view {

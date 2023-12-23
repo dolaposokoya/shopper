@@ -18,8 +18,8 @@
     <div class="form-container">
         <div class="account-section">
             <!-- <p class="account-active">Sign in</p> -->
-            <p class="account-active"><a href="/">Sign in</a> </p>
-            <p class="account-title">Register</p>
+            <p class="account-active"><a href="/">Sign in</a></p>
+            <p class="account-title">Register</a></p>
         </div>
         <div class="form-view">
             <div class="input-container">
@@ -27,12 +27,16 @@
                 <input placeholder="Email" name="email" type="email" />
             </div>
             <div class="input-container">
-                <img src="./assets/svg/email.svg" />
+                <img src="./assets/svg/Phone.svg" />
                 <input placeholder="Phone Number" name="phone" type="tel" />
             </div>
             <div class="input-container">
-                <img src="./assets/svg/email.svg" />
-                <input placeholder="Country" name="country" type="dropdown" />
+                <img src="./assets/svg/united-states.svg" />
+                <select name="country">
+                    <option value="0">Select Country</option>
+                    <option value="1">United State</option>
+                    <!-- <option value="2">Nigeria</option> -->
+                </select>
             </div>
             <div class="input-container">
                 <div class="password-view">
@@ -41,24 +45,12 @@
                 </div>
                 <img src="./assets/svg/eye.svg" class="eye-svg" />
             </div>
-            <div class="forgot-container">
-                <p class="forgot-password">Forgot password?</p>
+            <div class="terms-conditions">
+                <img src="./assets/svg/Check-Empty.svg" />
+                <p class="terms-policy-text">I accepted <span>Terms & Privacy Policy</span></p>
             </div>
-        </div>
-    </div>
-    <div class="signin-view">
-        <div class="sign-container">
-            <p class="signin-text">Or sign in with</p>
-        </div>
-        <div class="signin-container">
-            <div class="icon-view">
-                <img src="./assets/images/facebook.png" />
-            </div>
-            <div class="icon-view">
-                <img src="./assets/images/mail.png" />
-            </div>
-            <div class="icon-view">
-                <img src="./assets/images/twitter.png" />
+            <div class="button-view">
+                <button type="submit">Register</button>
             </div>
         </div>
     </div>
