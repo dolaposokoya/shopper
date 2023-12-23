@@ -10,6 +10,34 @@ body {
     flex-direction: column;
 }
 
+
+.animation-container {
+    opacity: 0;
+    transform: translateY(20px);
+    background: var(--Primary-Dark, #DF4300);
+    width: 100vw;
+    /* height: 100vh; */
+    padding: 1rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* overflow: hidden; */
+    flex-direction: column;
+    animation: fadeInUp 1s ease-out 0.5s forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 .company-logo {
     margin-top: -2rem;
     margin-bottom: 1rem;
@@ -29,7 +57,7 @@ body {
     /* 134.615% */
 }
 
-.company-container{
+.company-container {
     width: 2rem;
     height: 2rem;
     border-radius: .3rem;
@@ -53,6 +81,28 @@ body {
     margin-top: .7rem;
 }
 
+.text-container {
+    position: relative;
+    display: inline-block;
+    /* padding: 0rem .5rem; */
+}
+
+.rectangle::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 5.1rem;
+    height: .5rem;
+    /* Height of the rectangle */
+    background: var(--Primary-Pink, #F5B3A5);
+    top: 60%;
+    /* Center vertically */
+    left: 0;
+    /* Align to the left of the container */
+    transform: translateY(-50%);
+    opacity: .8;
+    /* z-index: -99; */
+}
 
 .account-active {
     color: var(--Primary-Dark, #DF4300);
@@ -162,7 +212,7 @@ body {
 
 .button-view button {
     width: 100%;
-    padding: 1rem 0px;
+    padding: .6rem 0px;
     justify-content: center;
     align-items: center;
     background: var(--Primary-Dark, #DF4300);
