@@ -64,6 +64,10 @@ body {
     background-color: #fff;
     margin-right: 1rem;
 }
+.company-container img{
+    width: 2rem;
+    height: 2rem;
+}
 
 .form-container {
     background-color: #fff;
